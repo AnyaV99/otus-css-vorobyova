@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("fonts/Inter-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal
+}
+
+body {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+
+h1 {
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 103px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+h4 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+address {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    background: #FFFFFF;
+}
+
+.navigation_mod {
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 600;
+    line-height: 103px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.navigation {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.modern_web_studio {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.title_bio {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.katya_mils {
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 115px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.art_director {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.blockquote_the_more {
+    font-family: Bitter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.title_designers {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.designers {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.website {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.title_testimonials {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.blockquote_i_just {
+    font-family: Bitter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.title_strong_point {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.title_strengths {
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 86px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.sides {
+    font-family: Bitter;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.product {
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.mod_media {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: right;
+}
