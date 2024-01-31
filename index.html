@@ -4,15 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <title>Mod Studio</title>
 </head>
 
 <body>
     <header>
         <!--Навигация сайта-->
-        <nav>
+
+        <nav class="navigation">
             <ul>
-                <li>
+                <li class="navigation_mod">
                     <a href="#mod">Mod</a>
                 </li>
 
@@ -41,31 +48,29 @@
             <header>
                 <h1>Mod Studio</h1>
             </header>
-            <p>Modern Web Studio</p>
+            <p class="modern_web_studio">Modern Web Studio</p>
             <img src=img/mod.jpg alt="Mod Studio" />
         </section>
 
         <!--Раздел  biography-->
         <section id="biography">
             <header>
-                <h2> Biography </h2>
+                <h2 class="title_bio"> Biography </h2>
             </header>
 
             <img src=img/KatyaMills.jpg alt="Katya Mills photo" />
-            <h3>Katya Mills</h3>
-            <p>Art Director</p>
-
-            <ul>
-                <li>Scenography</li>
-                <li>Styling</li>
-                <li>Creative Photography</li>
-                <li>Design</li>
-            </ul>
+            <h3 class="katya_mils">Katya Mills</h3>
+            <p class="art_director">
+                Art Director<br>
+                Scenography / Styling / Creative Photography / Design
+            </p>
 
             <blockquote>
-                <p>
-                    “The more I deal with the work as something that is my own, as something that is personal, the
-                    more successful it is.”
+                <p class="blockquote_the_more">
+                    “The more I deal with the work <br>
+                    as something that is my own, <br>
+                    as something that is personal,<br>
+                    the more successful it is.”
                 </p>
             </blockquote>
         </section>
@@ -73,46 +78,54 @@
         <!--Раздел  designers-->
         <section id="designers">
             <header>
-                <h2> Designers </h2>
+                <h2 class="title_designers"> Designers </h2>
             </header>
             <img src=img/JessWonder.jpg alt="Jess Wonder photo" />
-            <h3> Jess Wonder </h3>
-            <p>From/ Be more flower</p>
-            <p>Skills/ Design Strategy / Marketing</p>
+            <h4> Jess Wonder </h4>
+            <p class="designers"> <b> From/ </b>Be more flower<br>
+                <b>Skills/</b> Design Strategy / Marketing
+            </p>
 
             <img src=img/KameronClein.jpg alt="Kameron Clein photo" />
-            <h3>Kameron Clein</h3>
-            <p>From/ Be more flower</p>
-            <p>Skills/ Design Strategy / Marketing</p>
+            <h4>Kameron Clein</h4>
+            <p class="designers"> <b> From/ </b>Be more flower<br>
+                <b>Skills/</b> Design Strategy / Marketing
+            </p>
 
             <img src=img/LOUISSERED.jpg alt="Louisse Red photo" />
-            <h3> LOUISSE RED </h3>
-            <p> From/ Be more flower </p>
-            <p>Skills/ Design Strategy / Marketing</p>
+            <h4> LOUISSE RED </h4>
+            <p class="designers"> <b> From/ </b>Be more flower<br>
+                <b>Skills/</b> Design Strategy / Marketing
+            </p>
         </section>
 
         <!--Раздел  testimonials-->
         <section id="testimonials">
             <header>
-                <h2>Testimonials</h2>
+                <h2 class="title_testimonials">Testimonials</h2>
             </header>
 
             <img src=img/cafe.jpg alt="Cafe photo">
 
-            <h3>Website</h3>
-            <a href="www.whitepapers.com">www.whitepapers.com</a>
+            <h4>Website</h4>
+            <a href="www.whitepapers.com" class="website">www.whitepapers.com</a>
 
-            <h3>Brand Image</h3>
+            <h4>Brand Image</h4>
+            <a href="www.whitepapers.com" class="website">www.whitepapers.com</a>
 
-            <a href="www.whitepapers.com">www.whitepapers.com</a>
-
-            <h3>Creativity</h3>
-
-            <a href="www.whitepapers.com">www.whitepapers.com</a>
+            <h4>Creativity</h4>
+            <a href="www.whitepapers.com" class="website">www.whitepapers.com</a>
 
             <blockquote>
-                <p>
-                    I just really want to do good work and work with some great people, people who challange me.
+                <p class="i_just_really">
+                    I just really <br>
+                    want to do <br>
+                    good work <br>
+                    and work with <br>
+                    some great <br>
+                    people, people <br>
+                    who challange <br>
+                    me.
                 </p>
             </blockquote>
             <img src=img/a-string-bag.jpg alt="A string bag photo" />
@@ -126,8 +139,8 @@
             <img src=img/armchair.jpg alt="Armchair photo" />
             <img src=img/table.jpg alt="Table photo" />
 
-            <h3>Strengths</h3>
-            <ul>
+            <h3 class="title_strengths">Strengths</h3>
+            <ul class="sides">
                 <li>Interiors</li>
                 <li>Outdoors</li>
                 <li>Portraits</li>
@@ -146,14 +159,14 @@
     </main>
 
     <!--Подвал сайта-->
-    <footer>     
+    <footer>
         <address>
             <a href="tel:7 921 123-45-67"> +7 921 123-45-67 </a>
             <br />
             <a href="mailto:info@modstudio.com"> info@modstudio.com </a>
         </address>
-        <p>A product of MOD</p>
-        <p>© 2023 Mod Media. All rights reserved</p>
+        <p class="product">A product of MOD</p>
+        <p class="mod_media">© 2023 Mod Media. All rights reserved</p>
     </footer>
 
 </body>
