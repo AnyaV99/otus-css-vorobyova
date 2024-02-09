@@ -5,6 +5,12 @@
     font-style: normal
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', serif;
     font-style: normal;
@@ -20,6 +26,8 @@ h1 {
     line-height: 103px;
     letter-spacing: 0em;
     text-align: center;
+    padding-top: 120px;
+    margin-bottom: 14px;
 }
 
 h4 {
@@ -46,7 +54,11 @@ h4 {
     font-weight: 500;
     line-height: 28px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
 }
 
 .title_modern_web_studio {
@@ -187,4 +199,41 @@ h4 {
     line-height: 19px;
     letter-spacing: 0px;
     text-align: right;
+}
+
+/*Блок навигации*/
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    /*перенос строки */
+    justify-content: space-between;
+    /*прижимает содержимое к краям */
+    align-items: center;
+    /*выравнивает элементы по центру на вертикальной */
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 135px;
+}
+
+.header .menu {
+    margin: 20px 10px;
+    color: black;
+}
+
+/*Блок Промо*/
+.promo {
+    padding: 90px;
+    background-image: url("img/mod.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.promo-box {
+    display: block;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    max-width: 690px;
+    height: 400px;
+    width: auto;
 }
