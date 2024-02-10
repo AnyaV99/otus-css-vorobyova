@@ -204,12 +204,9 @@ a {
 /*Блок навигации*/
 .header {
     display: flex;
-    flex-wrap: wrap;
-    /*перенос строки */
-    justify-content: space-between;
-    /*прижимает содержимое к краям */
-    align-items: center;
-    /*выравнивает элементы по центру на вертикальной */
+    flex-shrink: 0;
+    justify-content: space-between; /*прижимает содержимое к краям */
+    align-items: center; /*выравнивает элементы по центру на вертикальной */
     padding-left: 30px;
     padding-right: 30px;
     height: 135px;
