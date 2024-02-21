@@ -83,6 +83,8 @@ a {
 
 .title_bio {
     text-align: right;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg); 
 }
 
 .title_designers {
@@ -103,7 +105,7 @@ a {
     font-weight: 500;
     line-height: 115px;
     letter-spacing: 0em;
-    text-align: right;
+    margin-bottom: 40px;
 }
 
 .art_director {
@@ -112,7 +114,7 @@ a {
     font-weight: 500;
     line-height: 21px;
     letter-spacing: 0em;
-    text-align: right;
+    margin-bottom: 30px;
 }
 
 .blockquote_the_more {
@@ -121,9 +123,7 @@ a {
     font-weight: 400;
     line-height: 31px;
     letter-spacing: 0em;
-    text-align: right;
 }
-
 
 .designers {
     font-family: Roboto;
@@ -143,7 +143,6 @@ a {
     text-align: left;
 }
 
-
 .blockquote_i_just {
     font-family: Bitter;
     font-size: 32px;
@@ -152,7 +151,6 @@ a {
     letter-spacing: 0em;
     text-align: center;
 }
-
 
 .title_strengths {
     font-family: Playfair Display;
@@ -205,8 +203,8 @@ a {
 .header {
     display: flex;
     flex-shrink: 0;
-    justify-content: space-between; /*прижимает содержимое к краям */
-    align-items: center; /*выравнивает элементы по центру на вертикальной */
+    justify-content: space-between; 
+    align-items: center; 
     padding-left: 30px;
     padding-right: 30px;
     height: 135px;
@@ -233,4 +231,34 @@ a {
     max-width: 690px;
     height: 400px;
     width: auto;
+}
+
+/*Блок Биография*/
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.photo-Katya-Mills {
+    order: -1;
+    margin-right: 20px;
+    max-width: 571px;
+}
+
+.conteiner-biography {
+    align-self: flex-start;
+}
+
+.conteiner-bio {
+    margin-left: 70px;
+    text-align: left;
+}
+
+.photo-Katya-Mills img{
+    width: 100%;
 }
