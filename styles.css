@@ -231,16 +231,14 @@ a {
 }
 
 /*Блок Testimonials*/
-.block-testimonials {
-    max-width: 1281px;
-    margin-left: 119px;
+.block-testimonials{ 
+    display: grid;
+    justify-content: center;
 }
 
 .section-testimonials-conteiner {
     display: grid;
-    grid-template-columns: 10% 40% 20% 30%;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    grid-template-columns: 10% 45% 20% 30%;
     justify-content: center;
 }
 
@@ -300,8 +298,6 @@ a {
     order: 2;
     justify-self: stretch;
     max-width: 569px;
-    max-height: 760px;
-    margin:auto;
 }
 
 .blockquote-just-really img {
