@@ -39,6 +39,10 @@ h4 {
     text-align: left;
 }
 
+img {
+    width: 100%;
+}
+
 .navigation_mod {
     font-family: Playfair Display;
     font-size: 86px;
@@ -84,11 +88,13 @@ a {
 .title_bio {
     text-align: right;
     writing-mode: vertical-lr;
-    transform: rotate(-180deg); 
+    transform: rotate(-180deg);
 }
 
 .title_designers {
     text-align: left;
+    margin-bottom: 40px;
+    margin-left: 119px;
 }
 
 .title_testimonials {
@@ -203,8 +209,8 @@ a {
 .header {
     display: flex;
     flex-shrink: 0;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     padding-left: 30px;
     padding-right: 30px;
     height: 135px;
@@ -248,6 +254,7 @@ a {
     order: -1;
     margin-right: 20px;
     max-width: 571px;
+    max-height: 840px;
 }
 
 .conteiner-biography {
@@ -259,6 +266,27 @@ a {
     text-align: left;
 }
 
-.photo-Katya-Mills img{
-    width: 100%;
+
+/*Блок Дизайнеры*/
+.conteiner-designers {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.designer {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-gap: 40px;
+    overflow: auto;
+}
+
+.designer img {
+    max-width: 336px;
+    height: 440px;
+    margin-bottom: 15px;
+}
+
+.conteiner-designers img:hover {
+    transform: scale(1.3);
 }
