@@ -36,6 +36,7 @@ h4 {
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0em;
+    margin-top: 20px;
     text-align: left;
 }
 
@@ -266,26 +267,34 @@ a {
 .conteiner-designers {
     display: grid;
     justify-content: center;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 1%;
     overflow: auto;
-}
-
-.header-title_designers {
-    display: grid;
-    grid-template-rows: 55px;
-    margin-left: 140px;
 }
 
 .designer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:619px;
-    justify-items: stretch;
+    grid-template-columns: 2fr repeat(3, 1fr);
     grid-gap: 20px;
     overflow: auto;
 }
 
-.designer img {
-    margin-bottom: 20px;
+.header-title_designers {
+    margin-left: 12%;
+    margin-bottom:30px;
+}
+
+.box-jess-wonder-photo img {
+    width: 572px;
+    height: 538px;
+}
+
+.txt-designers {
+    margin-left: 40%;
+}
+
+.photo-designers img {
+    width: 336px;
+    height: 440px;
+    margin-top: 99px;
+    left: 593.04px;
 }
