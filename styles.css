@@ -273,7 +273,7 @@ a {
 
 .designer {
     display: grid;
-    grid-template-columns: 2fr repeat(3, 1fr);
+    grid-template-columns: 1.5fr repeat(3, 1fr);
     grid-gap: 20px;
     overflow: auto;
 }
