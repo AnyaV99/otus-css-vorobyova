@@ -62,8 +62,8 @@ img {
     text-align: right;
 }
 
-a {
-    text-decoration: none;
+ul {
+    list-style-type: none;
 }
 
 .title_modern_web_studio {
@@ -90,6 +90,10 @@ a {
     text-align: right;
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
+}
+
+.title_designers {
+    text-align: left;
 }
 
 .title_testimonials {
@@ -159,7 +163,8 @@ a {
     font-weight: 500;
     line-height: 86px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .sides {
@@ -169,6 +174,7 @@ a {
     line-height: 41px;
     letter-spacing: 0em;
     text-align: left;
+    margin-left: 100px;
 }
 
 .address {
@@ -178,17 +184,17 @@ a {
     line-height: 26px;
     letter-spacing: 0px;
     text-align: left;
-    background: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .product {
-
     font-family: Roboto;
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
     letter-spacing: 0px;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .mod_media {
@@ -198,6 +204,7 @@ a {
     line-height: 19px;
     letter-spacing: 0px;
     text-align: right;
+    color: #FFFFFF;
 }
 
 /*Блок навигации*/
@@ -213,7 +220,11 @@ a {
 
 .header .menu {
     margin: 20px 10px;
-    color: black;
+}
+
+.header a {
+    text-decoration: none;
+    color: #000;
 }
 
 /*Блок Промо*/
@@ -280,7 +291,7 @@ a {
 
 .header-title_designers {
     margin-left: 12%;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 .box-jess-wonder-photo img {
@@ -297,4 +308,172 @@ a {
     height: 440px;
     margin-top: 99px;
     left: 593.04px;
+}
+
+/*Блок Testimonials*/
+.block-testimonials {
+    display: grid;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.section-testimonials-conteiner {
+    display: grid;
+    grid-template-columns: 10% 45% 20% 30%;
+    justify-content: center;
+}
+
+.title-testimonials {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    order: 3;
+    justify-self: start;
+    margin-left: 20px;
+}
+
+.cafe-photo {
+    order: 2;
+    justify-self: stretch;
+}
+
+.block-Website {
+    display: grid;
+    justify-self: center;
+    order: 1;
+}
+
+.block-Website a {
+    text-decoration: none;
+    color: #000;
+}
+
+.websit {
+    grid-row: 1;
+    grid-column: 1;
+    transform: rotate(-90deg);
+    align-self: center;
+}
+
+.brand-image {
+    grid-row: 2;
+    grid-column: 1;
+    transform: rotate(-90deg);
+    align-self: center;
+}
+
+.creativity {
+    grid-row: 3;
+    grid-column: 1;
+    transform: rotate(-90deg);
+    align-self: center;
+}
+
+.blockquote-just-really {
+    order: 4;
+    margin-top: 40px;
+    justify-self: start;
+    text-align: center;
+    font-family: Bitter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+}
+
+.cafe-photo img {
+    order: 2;
+    justify-self: stretch;
+    max-width: 569px;
+}
+
+.blockquote-just-really img {
+    max-width: 221px;
+    margin-top: 25px;
+    justify-self: center;
+}
+
+/*Блок Strong points*/
+@supports (display: grid) {
+    .section-strong-points {
+        display: grid;
+        justify-content: center;
+        padding-left: 1%;
+        overflow: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .block-strong-points {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-rows: 613px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1%;
+    }
+
+    .header-strong-points {
+        grid-column: 1/5;
+        margin-left: 16%;
+    }
+
+    .block-strengths {
+        margin-left: 30px;
+        margin-right: 30px;
+        align-items: center;
+    }
+
+    .section-strong-points img {
+        width: 335px;
+        height: 554px;
+        justify-self: stretch;
+    }
+}
+
+
+@supports not (display:flex) {
+    .section-strong-points {
+        padding-left: 1%;
+        overflow: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .block-strong-points {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .section-strong-points img {
+        width: 335px;
+        height: 554px;
+    }
+
+    .header-strong-points {
+        margin-left: 16%;
+        margin-bottom: 20px;
+    }
+
+    .block-strengths {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+/*Подвал сайта */
+.block-footer {
+    display: flex;
+    background-color: black;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 135px;
+}
+
+.block-footer a {
+    color: #ffffff;
 }
