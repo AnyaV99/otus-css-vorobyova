@@ -36,6 +36,7 @@ h4 {
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0em;
+    margin-top: 20px;
     text-align: left;
 }
 
@@ -259,6 +260,7 @@ ul {
     order: -1;
     margin-right: 20px;
     max-width: 571px;
+    max-height: 840px;
 }
 
 .conteiner-biography {
@@ -270,10 +272,49 @@ ul {
     text-align: left;
 }
 
+
+/*Блок Дизайнеры*/
+
+.conteiner-designers {
+    display: grid;
+    justify-content: center;
+    padding-left: 1%;
+    overflow: auto;
+}
+
+.designer {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+    grid-gap: 20px;
+    overflow: auto;
+}
+
+.header-title_designers {
+    margin-left: 12%;
+    margin-bottom: 30px;
+}
+
+.box-jess-wonder-photo img {
+    width: 572px;
+    height: 538px;
+}
+
+.txt-designers {
+    margin-left: 40%;
+}
+
+.photo-designers img {
+    width: 336px;
+    height: 440px;
+    margin-top: 99px;
+    left: 593.04px;
+}
+
 /*Блок Testimonials*/
 .block-testimonials {
     display: grid;
     justify-content: center;
+    margin-top: 80px;
 }
 
 .section-testimonials-conteiner {
@@ -352,7 +393,7 @@ ul {
 }
 
 /*Блок Strong points*/
-@supports (display: grid ) {
+@supports (display: grid) {
     .section-strong-points {
         display: grid;
         justify-content: center;
@@ -420,8 +461,6 @@ ul {
         margin-right: 30px;
     }
 }
-
-
 
 /*Подвал сайта */
 .block-footer {
