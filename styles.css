@@ -70,7 +70,6 @@ ul {
     letter-spacing: 0em;
 }
 
-
 /*Блок навигации*/
 .header {
     display: flex;
@@ -246,12 +245,21 @@ ul {
     h1 {
         font-family: Playfair Display;
         font-size: 70px;
-        font-weight: 500;
-        line-height: 103px;
+        font-weight: 400;
+        line-height: 93px;
         letter-spacing: 0em;
         text-align: center;
         padding-top: 20%;
         margin-bottom: 14px;
+    }
+
+    .title_modern_web_studio {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
     }
 
 }
@@ -311,6 +319,11 @@ ul {
 .title_bio {
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
 }
 
 span {
@@ -343,8 +356,9 @@ span {
     .conteiner-bio {
         display: flex;
         flex-direction: column;
-        margin-left: 0;
+        margin-left: 7%;
         text-align: left;
+        width: 100%;
     }
 
     .conteiner-biography {
@@ -375,7 +389,6 @@ span {
 
     .conte {
         display: flex;
-        justify-content: center;
         order: 2;
         margin-top: 20px;
     }
@@ -385,6 +398,14 @@ span {
         writing-mode: horizontal-tb;
         transform: rotate(360deg);
 
+    }
+
+    .blockquote_the_more {
+        font-family: Bitter;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 36px;
+        letter-spacing: 0em;
     }
 
     .katya_mils {
@@ -449,20 +470,40 @@ span {
         margin-top: 5px;
     }
 
+    .designer {
+        margin-left: 3%;
+    }
+
     .header-title_designers {
-        margin-left: 2%;
+        margin-left: 4%;
         margin-bottom: 30px;
     }
 
     .photo-designers img {
         width: 310px;
         height: 438px;
-        left: 593.04px;
+        left: 593px;
         margin-top: 5px;
     }
 
     .txt-designers {
         margin-left: 1%;
+    }
+
+    .designers {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+    }
+
+    .title_designers {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
     }
 }
 
@@ -550,10 +591,10 @@ span {
 }
 
 .blockquote_i_just {
-    font-family: Bitter;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 38px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
     letter-spacing: 0em;
     text-align: center;
 }
@@ -576,13 +617,15 @@ span {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
         margin-top: 80px;
     }
 
     .section-testimonials-conteiner {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin-left: 4%;
+        margin-right: 4%;
     }
 
     .blockquote-just-really {
@@ -650,6 +693,13 @@ span {
         display: none;
     }
 
+    .title_testimonials {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+    }
 }
 
 /*Блок Strong points*/
@@ -726,7 +776,8 @@ span {
         grid-template-rows: 455px;
         grid-template-columns: 250px 310px 310px 310px;
         grid-gap: 1%;
-        margin-left: 67%;
+        margin-left: 31%;
+        width: 100%;
     }
 
     .section-strong-points img {
@@ -736,7 +787,7 @@ span {
 
     .header-strong-points {
         grid-column: 1/4;
-        margin-left: 36%;
+        margin-left: 32%;
         margin-bottom: 30px;
     }
 
@@ -763,10 +814,10 @@ span {
         font-family: Bitter;
         font-size: 24px;
         font-weight: 400;
-        line-height: 30px;
+        line-height: 28.8px;
         letter-spacing: 0em;
         text-align: left;
-        margin-left: 40px;
+        margin-left: 10%;
     }
 
     .title_strengths {
@@ -777,6 +828,13 @@ span {
         letter-spacing: 0em;
         text-align: center;
         margin-bottom: 15px;
+    }
+
+    .title_strong_point {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
     }
 
 }
@@ -831,6 +889,7 @@ span {
 
 
 .address {
+    font-style: normal;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
@@ -850,6 +909,13 @@ span {
     color: #FFFFFF;
 }
 
+.product_mod {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28.13px; 
+}
+
 .mod_media {
     font-family: Roboto;
     font-size: 16px;
@@ -863,13 +929,11 @@ span {
 @media screen and (max-width: 450px) {
     .block-footer {
         display: grid;
-        height: 193px;
+        height: 275px;
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 20%);
         padding: 30px 0 30px 16px;
-        position:relative;
-        z-index:101;
     }
 
     .footer-address {
@@ -881,17 +945,37 @@ span {
 
     }
 
-    .footer-media {
-        margin-top: 18px;
-    }
-
     .mod_media {
+        margin-top: 8px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.75px;
         text-align: left;
-        margin-top: 38px;
     }
 
     .product {
         text-align: right;
+        margin-right: 3%;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.09px;
+    }
+
+    .product_mod {
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 28.13px;
+    }
+
+    .address {
+        font-style: normal;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
     }
 }
 
