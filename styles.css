@@ -519,3 +519,18 @@ ul {
         margin-left: 26%;
     }
 }
+
+.modal {
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    top: 2%;
+    width: 480px;
+    height: 588px;
+}
+
+body.modal {
+    height: 100vh;
+    overflow-y: hidden;
+}
+

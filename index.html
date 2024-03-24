@@ -26,6 +26,19 @@
                     <a href="#designers" class="navigation menu">Designers</a>
                     <a href="#testimonials" class="navigation menu">Testimonials</a>
                     <a href="#strong-points" class="navigation menu">Strong points</a>
+                    <button onclick="window.modal.showModal()"> Open </button>
+
+                    <dialog id="modal" class="modal">
+                        <h2> Get in Touch </h2>
+                        <p>Do you have any questions? Have something to say? Don't be shy, write to us:</p>
+                        <p>Name</p>
+                        <p>E-mail</p>
+                        <p>Comment</p>
+                        <div class="modal-for_button">
+                            <button onclick="window.modal.close()">Cancel</button>
+                            <button type="submit">Send</button>
+                        </div>
+                    </dialog>
                 </div>
             </div>
         </nav>
@@ -190,7 +203,7 @@
     </main>
 
     <!--Подвал сайта-->
-    <footer  class="block-footer">
+    <footer class="block-footer">
         <div class="footer-address">
             <address class="address">
                 <a href="tel:7 921 123-45-67"> +7 921 123-45-67 </a>
@@ -199,7 +212,7 @@
             </address>
         </div>
         <div>
-            <p class="product">A product of  <b>MOD</b></p>
+            <p class="product">A product of <b>MOD</b></p>
         </div>
         <div>
             <p class="mod_media">© 2023 Mod Media. All rights reserved</p>
