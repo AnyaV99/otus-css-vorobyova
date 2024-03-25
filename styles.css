@@ -997,3 +997,17 @@ span {
         margin-left: 26%;
     }
 }
+
+.modal {
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    top: 2%;
+    width: 480px;
+    height: 588px;
+}
+
+.modal::backdrop {
+    background-color: rgba(88, 85, 85, 0.5);
+  }
+

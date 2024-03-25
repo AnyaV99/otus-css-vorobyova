@@ -25,10 +25,25 @@
                     <a href="#biography" class="navigation menu">Biography</a>
                     <a href="#designers" class="navigation menu">Designers</a>
                     <a href="#testimonials" class="navigation menu">Testimonials</a>
-                    <a href="#strong-points" class="navigation menu isck">Strong points</a>
+                    <a href="#strong-points" class="navigation menu">Strong points</a>
                 </div>
             </div>
         </nav>
+        <script>
+            const dialog = document.querySelector('.modal')
+            const openButton = document.querySelector('.open-button')
+            const closeButton = document.querySelector('.close-button')
+      
+            openButton.addEventListener('click', () => {
+              dialog.showModal()
+              document.body.style.overflowY = 'hidden'
+            })
+      
+            closeButton.addEventListener('click', () => {
+              dialog.close()
+              document.body.style.overflowY = 'auto'
+            })
+          </script>
     </header>
 
     <!--Основная информация сайта-->
@@ -227,8 +242,8 @@
                 <a href="mailto:info@modstudio.com"> INFO@MODSTUDIO.COM </a>
             </address>
         </div>
-        <div class="footer-product">
-            <p class="product">A product of <b class="product_mod">MOD</b></p>
+        <div>
+            <p class="product">A product of  <b>MOD</b></p>
         </div>
         <div class="footer-media">
             <p class="mod_media">© 2023 Mod Media. All rights reserved</p>
