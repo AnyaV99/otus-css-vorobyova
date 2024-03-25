@@ -529,6 +529,10 @@ ul {
     top: 2%;
 }
 
+.modal::backdrop {
+    background-color: rgba(88, 85, 85, 0.5);
+  }
+
 .modal-form {
     padding: 20px;
     display: flex;
@@ -624,5 +628,4 @@ ul {
     width: 180px;
     color: #FFFFFF;
     background-color: #000000;
-
 }
