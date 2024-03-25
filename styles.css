@@ -529,8 +529,7 @@ ul {
     height: 588px;
 }
 
-body.modal {
-    height: 100vh;
-    overflow-y: hidden;
-}
+.modal::backdrop {
+    background-color: rgba(88, 85, 85, 0.5);
+  }
 

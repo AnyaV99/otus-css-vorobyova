@@ -26,7 +26,7 @@
                     <a href="#designers" class="navigation menu">Designers</a>
                     <a href="#testimonials" class="navigation menu">Testimonials</a>
                     <a href="#strong-points" class="navigation menu">Strong points</a>
-                    <button onclick="window.modal.showModal()"> Open </button>
+                    <button class="open-button" onclick="window.modal.showModal()"> Open </button>
 
                     <dialog id="modal" class="modal">
                         <h2> Get in Touch </h2>
@@ -35,13 +35,28 @@
                         <p>E-mail</p>
                         <p>Comment</p>
                         <div class="modal-for_button">
-                            <button onclick="window.modal.close()">Cancel</button>
+                            <button class="close-button" onclick="window.modal.close()">Cancel</button>
                             <button type="submit">Send</button>
                         </div>
                     </dialog>
                 </div>
             </div>
         </nav>
+        <script>
+            const dialog = document.querySelector('.modal')
+            const openButton = document.querySelector('.open-button')
+            const closeButton = document.querySelector('.close-button')
+      
+            openButton.addEventListener('click', () => {
+              dialog.showModal()
+              document.body.style.overflowY = 'hidden'
+            })
+      
+            closeButton.addEventListener('click', () => {
+              dialog.close()
+              document.body.style.overflowY = 'auto'
+            })
+          </script>
     </header>
 
     <!--Основная информация сайта-->
