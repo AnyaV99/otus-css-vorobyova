@@ -26,19 +26,6 @@
                     <a href="#designers" class="navigation menu">Designers</a>
                     <a href="#testimonials" class="navigation menu">Testimonials</a>
                     <a href="#strong-points" class="navigation menu">Strong points</a>
-                    <button class="open-button" onclick="window.modal.showModal()"> Open </button>
-
-                    <dialog id="modal" class="modal">
-                        <h2> Get in Touch </h2>
-                        <p>Do you have any questions? Have something to say? Don't be shy, write to us:</p>
-                        <p>Name</p>
-                        <p>E-mail</p>
-                        <p>Comment</p>
-                        <div class="modal-for_button">
-                            <button class="close-button" onclick="window.modal.close()">Cancel</button>
-                            <button type="submit">Send</button>
-                        </div>
-                    </dialog>
                 </div>
             </div>
         </nav>
@@ -62,13 +49,12 @@
     <!--Основная информация сайта-->
     <main>
         <section id="mod" class="promo">
-            <div class="wrap">
-                <div class="promo-box">
-                    <div>
-                        <h1>Mod Studio</h1>
-                        <p class="title_modern_web_studio">Modern Web Studio</p>
-                    </div>
-                </div>
+            <div class="promo-box">
+                <h1>Mod Studio</h1>
+                <p class="title_modern_web_studio">Modern Web Studio</p>
+            </div>
+            <div class="mobile-img-mod">
+                <img src=img2x/mod2x.png alt="Katya Mills photo" />
             </div>
         </section>
 
@@ -76,26 +62,38 @@
         <section id="biography" class="conteiner">
             <div class="conteiner-biography">
                 <header>
-                    <h2 class="title_bio" class="title_bio"> Biography </h2>
+                    <h2 class="title_bio"> Biography </h2>
                 </header>
             </div>
             <div class="photo-Katya-Mills">
                 <img src=img/KatyaMills.jpg alt="Katya Mills photo" />
             </div>
             <div class="conteiner-bio">
-                <h3 class="katya_mils">Katya Mills</h3>
-                <p class="art_director">
-                    Art Director<br>
-                    Scenography / Styling / Creative Photography / Design
-                </p>
-                <blockquote>
-                    <p class="blockquote_the_more">
-                        “The more I deal with the work <br>
-                        as something that is my own, <br>
-                        as something that is personal,<br>
-                        the more successful it is.”
+                <div class="conte">
+                    <h3 class="katya_mils"> <span>-</span>Katya Mills</h3>
+                </div>
+                <div class="art_director">
+                    <p> Art Director </p>
+                    <p class="spisok">
+                        Scenography / Styling / Creative Photography / Design
                     </p>
-                </blockquote>
+                    <ul class="slech">
+                        <li> - Scenography</li>
+                        <li> - Styling</li>
+                        <li> - Creative Photography</li>
+                        <li> - Design</li>
+                    </ul>
+                </div>
+                <div class="con">
+                    <blockquote>
+                        <p class="blockquote_the_more">
+                            “The more I deal with the work <br>
+                            as something that is my own, <br>
+                            as something that is personal,<br>
+                            the more successful it is.”
+                        </p>
+                    </blockquote>
+                </div>
             </div>
         </section>
 
@@ -109,7 +107,10 @@
                 </div>
                 <div class="designer">
                     <div class="box-jess-wonder-photo">
-                        <img src=img/JessWonder.jpg alt="Jess Wonder photo" />
+                        <picture>
+                            <source srcset="img2x/JessWonder2x.png" media="(max-width: 450px)">
+                            <img src=img/JessWonder.jpg alt="Jess Wonder photo" />
+                          </picture>
                         <div class="txt-designers">
                             <h4> JESS WONDER </h4>
                             <p class="designers"> <b> From/ </b>Be more flower<br>
@@ -171,7 +172,7 @@
                 </div>
 
                 <div class="blockquote-just-really">
-                    <blockquote>
+                    <blockquote class="laptop-vers">
                         <p class="i_just_really">
                             I just really <br>
                             want to do <br>
@@ -183,7 +184,16 @@
                             me.
                         </p>
                     </blockquote>
-                    <img src=img/a-string-bag.jpg alt="A string bag photo" />
+                    <blockquote class="mob-vers">
+                        <p class="i_just_really">
+                            I just really want to do <br>
+                            good work and work <br>
+                            with some great people, <br>
+                            people who challange <br>
+                            me.
+                        </p>
+                    </blockquote>
+                    <img class="photo-bag" src=img/a-string-bag.jpg alt="A string bag photo" />
                 </div>
             </div>
         </section>
@@ -191,11 +201,15 @@
         <!--Раздел  strong-points-->
         <section id="strong-points" class="section-strong-points">
             <header class="header-strong-points">
-                <h2 class="title_strong_point">Strong point</h2>
+                <h2 class="title_strong_point">Strong points</h2>
             </header>
             <div class="block-strong-points">
-                <img src=img/armchair.jpg alt="Armchair photo" />
-                <img src=img/table.jpg alt="Table photo" />
+                <div  class="img-SP-1">
+                    <img src=img/armchair.jpg alt="Armchair photo" />
+                </div>
+                <div class="img-SP-2">
+                    <img src=img/table.jpg alt="Table photo" />
+                </div>
                 <div class="block-strengths">
                     <h3 class="title_strengths">Strengths</h3>
                     <ul class="sides">
@@ -212,7 +226,9 @@
                         <li>Nature</li>
                     </ul>
                 </div>
-                <img src=img/cafe.jpg alt="Cafe photo" />
+                <div class="img-SP-3">
+                    <img src=img/cafe.jpg alt="Cafe photo" />
+                </div>
             </div>
         </section>
     </main>
@@ -227,9 +243,9 @@
             </address>
         </div>
         <div>
-            <p class="product">A product of <b>MOD</b></p>
+            <p class="product">A product of  <b>MOD</b></p>
         </div>
-        <div>
+        <div class="footer-media">
             <p class="mod_media">© 2023 Mod Media. All rights reserved</p>
         </div>
     </footer>
