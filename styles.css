@@ -913,7 +913,7 @@ span {
     font-family: Roboto;
     font-size: 24px;
     font-weight: 900;
-    line-height: 28.13px; 
+    line-height: 28.13px;
 }
 
 .mod_media {
@@ -1009,7 +1009,7 @@ span {
 
 .modal::backdrop {
     background-color: rgba(88, 85, 85, 0.5);
-  }
+}
 
 .modal-form {
     padding: 20px;
@@ -1025,13 +1025,49 @@ span {
 .modal-form__input {
     width: 100%;
     height: 42px;
+    border: 1px solid #000000;
     border-radius: 8px;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     line-height: 18.75px;
     text-align: left;
-    padding-left: 2%;
+    padding: 2%;
+}
+
+.user {
+    background-image: url(svg/user.svg);
+    background-size: 6%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+.at {
+    background-image: url(svg/at.svg);
+    background-size: 7%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+.text {
+    background-image: url(svg/text.svg);
+    background-size: 7%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+
+.modal-form__input:hover,
+.modal-form__textarea:hover {
+    background-color: #F5F5F5;
+}
+
+.modal-form__input:focus,
+.modal-form__textarea:focus {
+    outline: 2px solid #9370DB;
 }
 
 .modal-form__label {
@@ -1051,6 +1087,7 @@ span {
 .modal-form__textarea {
     width: 100%;
     resize: none;
+    border: 1px solid #000000;
     border-radius: 8px;
     height: 135px;
     font-family: Roboto;
@@ -1058,8 +1095,7 @@ span {
     font-weight: 400;
     line-height: 18.75px;
     text-align: left;
-    padding-left: 2%;
-    padding-top: 2%;
+    padding: 2%;
 }
 
 .modal-form__title {
@@ -1081,7 +1117,6 @@ span {
 .modal-for_button {
     text-align: center;
 }
-
 
 .modal-for_buttonWhite {
     font-family: Roboto;
@@ -1105,4 +1140,12 @@ span {
     width: 180px;
     color: #FFFFFF;
     background-color: #000000;
+}
+
+.open-button:hover,
+.modal-for_buttonWhite:hover,
+.modal-for_buttonBlack:hover {
+    outline: 2px solid #9370DB;
+    cursor: pointer;
+    transform: scale(1.1);
 }
