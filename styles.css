@@ -177,11 +177,14 @@ ul {
         white-space: nowrap;
     }
 
+    .chat {
+        display: none;
+    }
 }
 
 /*Блок Промо*/
 .promo {
-    padding: 90px;
+    padding: 100px;
     background-color: #d9cacb;
     background-image: url("img/mod.jpg");
     background-repeat: no-repeat;
@@ -261,7 +264,6 @@ ul {
         letter-spacing: 0em;
         text-align: center;
     }
-
 }
 
 /*Блок Биография*/
@@ -320,7 +322,7 @@ ul {
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 0em;
@@ -369,10 +371,10 @@ span {
     .photo-Katya-Mills {
         order: 4;
         width: 100%;
+        margin-right: 0;
     }
 
     .photo-Katya-Mills img {
-        max-width: 450px;
         height: 400px;
         object-fit: cover;
     }
@@ -397,7 +399,6 @@ span {
         text-align: left;
         writing-mode: horizontal-tb;
         transform: rotate(360deg);
-
     }
 
     .blockquote_the_more {
@@ -836,7 +837,6 @@ span {
         font-weight: 700;
         line-height: 21.09px;
     }
-
 }
 
 
@@ -886,7 +886,6 @@ span {
 .block-footer a {
     color: #ffffff;
 }
-
 
 .address {
     font-style: normal;
@@ -942,7 +941,6 @@ span {
 
     .footer-product {
         grid-row: 1;
-
     }
 
     .mod_media {
@@ -983,7 +981,8 @@ span {
     .tablet-menu {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
+        flex-wrap:wrap;
     }
 
     .photo-bag {
@@ -996,6 +995,10 @@ span {
         grid-column: 1/5;
         margin-left: 26%;
     }
+
+    .header {
+        height: 158px;
+    }
 }
 
 /*Popap*/
@@ -1006,6 +1009,18 @@ span {
     margin: auto;
     top: 2%;
 }
+
+.modal-form:after {
+    content: "";
+    position: fixed;
+    width: 480px;
+    height: 589px;
+    transform: rotate(2deg);
+    border: 2px solid #fff;
+    translate: -4% 0.5%;
+    border-radius: 10px;
+    z-index: -1;
+  }
 
 .modal::backdrop {
     background-color: rgba(88, 85, 85, 0.5);
@@ -1149,3 +1164,26 @@ span {
     cursor: pointer;
     transform: scale(1.1);
 }
+.chat {
+    height: 40px;
+    width: 40px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.chat:before {
+    content: "\f0e6";
+    font-family: FontAwesome;
+    color: #FFFFFF;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+}
+
+.plus {
+    margin-right: 5%;
+    color: #FFFFFF;
+}
+
+
+

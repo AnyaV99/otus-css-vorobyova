@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v6.5.1/css/all.css">
     <title>Mod Studio</title>
 </head>
 
@@ -25,8 +26,9 @@
                     <a href="#biography" class="navigation menu">Biography</a>
                     <a href="#designers" class="navigation menu">Designers</a>
                     <a href="#testimonials" class="navigation menu">Testimonials</a>
-                    <a href="#strong-points" class="navigation menu isck ">Strong points</a>
-                    <button class="open-button" onclick="window.modal.showModal()"> Open </button>
+                    <a href="#strong-points" class="navigation menu isck">Strong points</a>
+                    <button class="open-button chat" onclick="window.modal.showModal()"> <i
+                            class="fa-regularfa-comments-o fa-lg"></i> </button>
                 </div>
             </div>
 
@@ -48,13 +50,15 @@
 
                     <label class="modal-form__label">
                         Comment
-                        <textarea class="modal-form__textarea text" name="comment" placeholder="Some text..."rows="5"></textarea>                         
+                        <textarea class="modal-form__textarea text" name="comment" placeholder="Some text..."
+                            rows="5"></textarea>
                     </label>
 
                     <div class="modal-for_button">
                         <button onclick="window.modal.close()"
                             class="modal-for_buttonWhite close-button">Cancel</button>
-                        <button type="submit" class="modal-for_buttonBlack">Send</button>
+                        <button type="submit" class="modal-for_buttonBlack"> <i class="fa-solid fa-plus plus"></i>
+                            Send</button>
                     </div>
                 </form>
             </dialog>
@@ -272,7 +276,7 @@
                 <a href="mailto:info@modstudio.com"> INFO@MODSTUDIO.COM </a>
             </address>
         </div>
-        <div>
+        <div class="footer-product">
             <p class="product">A product of <b>MOD</b></p>
         </div>
         <div class="footer-media">
