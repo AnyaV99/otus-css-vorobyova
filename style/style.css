@@ -223,7 +223,7 @@ ul {
 }
 
 .modal-form__user {
-  background-image: url(svg/user.svg);
+  background-image: url(../svg/user.svg);
   background-size: 6%;
   background-position: right;
   background-repeat: no-repeat;
@@ -231,7 +231,7 @@ ul {
 }
 
 .modal-form__at {
-  background-image: url(svg/at.svg);
+  background-image: url(../svg/at.svg);
   background-size: 7%;
   background-position: right;
   background-repeat: no-repeat;
@@ -239,7 +239,7 @@ ul {
 }
 
 .modal-form__text {
-  background-image: url(svg/text.svg);
+  background-image: url(../svg/text.svg);
   background-size: 7%;
   background-position: top right;
   background-repeat: no-repeat;
