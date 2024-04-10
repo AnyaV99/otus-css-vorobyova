@@ -309,7 +309,7 @@ ul {
   text-align: center;
 }
 
-.modal-form_buttonWhite {
+.modal-form_button_white {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
@@ -321,7 +321,7 @@ ul {
   margin-right: 3%;
 }
 
-.modal-form_buttonBlack {
+.modal-form__button_black {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
@@ -333,8 +333,8 @@ ul {
   background-color: #000000;
 }
 
-.modal-form_buttonWhite:hover,
-.modal-form_buttonBlack:hover {
+.modal-form_button_white:hover,
+.modal-form__button_black:hover {
   outline: 2px solid #9370DB;
   cursor: pointer;
   transform: scale(1.1);
@@ -369,7 +369,7 @@ ul {
   margin-bottom: 14px;
 }
 
-.section-promo__title-modern {
+.section-promo__title_modern {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
@@ -490,7 +490,7 @@ ul {
   letter-spacing: 0em;
 }
 
-.section-biography__list-mobil {
+.section-biography__list_mobil {
   display: none;
 }
 
@@ -504,10 +504,10 @@ ul {
     margin-top: 80px;
     margin-bottom: 80px;
   }
-  .section-biography__list-laptop {
+  .section-biography__list_laptop {
     display: none;
   }
-  .section-biography__list-mobil {
+  .section-biography__list_mobil {
     display: inline;
   }
   .section-biography__title {
@@ -521,7 +521,6 @@ ul {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21.09px;
     line-height: 21.09px;
     text-align: left;
   }
@@ -592,12 +591,12 @@ ul {
   overflow: auto;
 }
 
-.section-designers__photo-big img {
+.section-designers__photo_big img {
   width: 572px;
   height: 538px;
 }
 
-.section-designers__text-big {
+.section-designers__text_big {
   margin-left: 40%;
 }
 
@@ -618,7 +617,7 @@ ul {
 }
 
 @media screen and (max-width: 450px) {
-  .section-designers__photo-big img {
+  .section-designers__photo_big img {
     width: 310px;
     height: 438px;
     margin-top: 5px;
@@ -635,7 +634,6 @@ ul {
     font-size: 18px;
     font-weight: 700;
     line-height: 21.09px;
-    line-height: 21.09px;
   }
   .section-designers__photo-designers img {
     width: 310px;
@@ -643,7 +641,7 @@ ul {
     left: 593px;
     margin-top: 5px;
   }
-  .section-designers__text-big {
+  .section-designers__text_big {
     margin-left: 1%;
   }
   .section-designers__skils {
@@ -740,7 +738,7 @@ ul {
   justify-self: start;
 }
 
-.section-testimonials__blockquote-laptop {
+.section-testimonials__blockquote_laptop {
   text-align: center;
   font-family: Bitter;
   font-size: 32px;
@@ -755,7 +753,7 @@ ul {
   justify-self: center;
 }
 
-.section-testimonials__blockquote-mobile {
+.section-testimonials__blockquote_mobile {
   display: none;
 }
 
@@ -802,8 +800,7 @@ ul {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0em;
+    line-height: 21.09px;
   }
   .block-website__website {
     grid-column: 1;
@@ -830,7 +827,7 @@ ul {
     margin-top: 25px;
     justify-self: center;
   }
-  .section-testimonials__blockquote-mobile {
+  .section-testimonials__blockquote_mobile {
     display: inline;
     font-family: Bitter;
     font-size: 30px;
@@ -838,7 +835,7 @@ ul {
     line-height: 36px;
     text-align: center;
   }
-  .section-testimonials__blockquote-laptop {
+  .section-testimonials__blockquote_laptop {
     display: none;
   }
 }

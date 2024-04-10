@@ -81,7 +81,7 @@
     justify-self: start;
 }
 
-.section-testimonials__blockquote-laptop {
+.section-testimonials__blockquote_laptop {
     text-align: center;
     font-family: Bitter;
     font-size: 32px;
@@ -96,7 +96,7 @@
     justify-self: center;
 }
 
-.section-testimonials__blockquote-mobile {
+.section-testimonials__blockquote_mobile {
     display: none;
 }
 
@@ -177,7 +177,7 @@
         justify-self: center;
     }
 
-    .section-testimonials__blockquote-mobile {
+    .section-testimonials__blockquote_mobile {
         display: inline;
         font-family: Bitter;
         font-size: 30px;
@@ -186,7 +186,7 @@
         text-align: center;
     }
 
-    .section-testimonials__blockquote-laptop {
+    .section-testimonials__blockquote_laptop {
         display: none;
     }
 }

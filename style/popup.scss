@@ -48,7 +48,7 @@
 }
 
 .modal-form__user {
-    background-image: url(svg/user.svg);
+    background-image: url(../svg/user.svg);
     background-size: 6%;
     background-position: right;
     background-repeat: no-repeat;
@@ -56,7 +56,7 @@
 }
 
 .modal-form__at {
-    background-image: url(svg/at.svg);
+    background-image: url(../svg/at.svg);
     background-size: 7%;
     background-position: right;
     background-repeat: no-repeat;
@@ -64,7 +64,7 @@
 }
 
 .modal-form__text {
-    background-image: url(svg/text.svg);
+    background-image: url(../svg/text.svg);
     background-size: 7%;
     background-position: top right;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@
     text-align: center;
 }
 
-.modal-form_buttonWhite {
+.modal-form_button_white {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 500;
@@ -146,7 +146,7 @@
     margin-right: 3%;
 }
 
-.modal-form_buttonBlack {
+.modal-form__button_black {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 500;
@@ -158,8 +158,8 @@
     background-color: #000000;
 }
 
-.modal-form_buttonWhite:hover,
-.modal-form_buttonBlack:hover {
+.modal-form_button_white:hover,
+.modal-form__button_black:hover {
     outline: 2px solid $color-links-hover;
     cursor: pointer;
     transform: scale(1.1);

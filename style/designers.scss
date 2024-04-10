@@ -23,12 +23,12 @@
     overflow: auto;
 }
 
-.section-designers__photo-big img {
+.section-designers__photo_big img {
     width: 572px;
     height: 538px;
 }
 
-.section-designers__text-big {
+.section-designers__text_big {
     margin-left: 40%;
 }
 
@@ -50,7 +50,7 @@
 
 @media screen and (max-width: 450px) {
 
-    .section-designers__photo-big img {
+    .section-designers__photo_big img {
         width: 310px;
         height: 438px;
         margin-top: 5px;
@@ -76,7 +76,7 @@
         margin-top: 5px;
     }
 
-    .section-designers__text-big {
+    .section-designers__text_big {
         margin-left: 1%;
     }
 
