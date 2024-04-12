@@ -30,17 +30,6 @@ main {
     flex: 1;
 }
 
-h1 {
-    font-family: Playfair Display;
-    font-size: 86px;
-    font-weight: 500;
-    line-height: 103px;
-    letter-spacing: 0em;
-    text-align: center;
-    padding-top: 120px;
-    margin-bottom: 14px;
-}
-
 h4 {
     font-family: Roboto;
     font-size: 16px;
@@ -59,34 +48,35 @@ ul {
     list-style-type: none;
 }
 
-.title_bio,
-.title_designers,
-.title_testimonials,
-.title_strong_point {
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0em;
-}
-
 /*Блок навигации*/
 .header {
     display: flex;
     flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 23px;
     padding-right: 30px;
     height: 138px;
     max-width: 100%;
 }
 
-.menu {
-    position: relative;
+.header a {
+    text-decoration: none;
+    color: #000000;
 }
 
-.menu:after {
+.header__navigation {
+    position: relative;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-right: 40px;
+}
+
+.header__navigation:after {
     content: "";
     display: block;
     position: absolute;
@@ -98,7 +88,7 @@ ul {
     transition: width 0.5s;
 }
 
-.menu:hover:after {
+.header__navigation:hover:after {
     content: "";
     width: 100%;
     display: block;
@@ -110,13 +100,7 @@ ul {
     transition: width 0.5s;
 }
 
-
-.header a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.navigation_mod {
+.header__navigation-mod {
     font-family: Playfair Display;
     font-size: 86px;
     font-weight: 600;
@@ -125,14 +109,25 @@ ul {
     text-align: left;
 }
 
-.navigation {
-    font-family: Roboto;
+.header__icon {
+    height: 45px;
+    width: 45px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.header__icon:before {
+    content: "\f0e6";
+    font-family: FontAwesome;
+    color: #FFFFFF;
     font-size: 24px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: right;
-    margin-right: 20px;
+}
+
+.header__open-button:hover {
+    transform: scale(1.2);
+    background: #000000;
+    box-shadow: 2px 2px 4px #9370DB;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 450px) {
@@ -149,7 +144,7 @@ ul {
         border: 1px solid #000000;
     }
 
-    .tablet-menu {
+    .header__tablet-menu {
         display: flex;
         gap: 80px;
         flex-wrap: nowrap;
@@ -159,12 +154,12 @@ ul {
         align-items: center;
     }
 
-    .tablet-menu a {
+    .header__tablet-menu a {
         font-weight: 400;
         font-size: 40px;
     }
 
-    .navigation {
+    .header__navigation {
         width: 23.5px;
         text-overflow: clip;
         overflow: hidden;
@@ -173,843 +168,16 @@ ul {
         margin-right: 0;
     }
 
-    .navigation_mod {
+    .header__navigation-mod {
         display: none;
     }
 
-    .isck {
+    .header__navigation-exception {
         white-space: nowrap;
     }
 
-    .chat {
+    .header__icon {
         display: none;
-    }
-}
-
-/*Блок Промо*/
-.promo {
-    padding: 100px;
-    background-color: #d9cacb;
-    background-image: url("img/mod.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.promo-box {
-    display: block;
-    background-color: #FFFFFF;
-    margin: 0 auto;
-    max-width: 690px;
-    height: 400px;
-}
-
-.title_modern_web_studio {
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-
-.mobile-img-mod {
-    display: none;
-}
-
-@media screen and (max-width: 450px) {
-    .promo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 0;
-        background-color: #FFFFFF;
-        background-image: none;
-        background-position: center;
-        width: 100%;
-    }
-
-    .promo-box {
-        display: block;
-        background-color: #FFFFFF;
-        margin: 1%;
-        width: 100%;
-        height: 344px;
-    }
-
-    .mobile-img-mod {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 420px;
-    }
-
-    .mobile-img-mod img {
-        object-fit: cover;
-    }
-
-    h1 {
-        font-family: Playfair Display;
-        font-size: 70px;
-        font-weight: 400;
-        line-height: 93px;
-        letter-spacing: 0em;
-        text-align: center;
-        padding-top: 20%;
-        margin-bottom: 14px;
-    }
-
-    .title_modern_web_studio {
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 21px;
-        letter-spacing: 0em;
-        text-align: center;
-    }
-}
-
-/*Блок Биография*/
-.conteiner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.photo-Katya-Mills {
-    order: -1;
-    margin-right: 20px;
-    max-width: 570px;
-}
-
-.conteiner-biography {
-    align-self: flex-start;
-}
-
-.conteiner-bio {
-    margin-left: 70px;
-    text-align: left;
-}
-
-.katya_mils {
-    font-family: Playfair Display;
-    font-size: 86px;
-    font-weight: 500;
-    line-height: 115px;
-    letter-spacing: 0em;
-    margin-bottom: 40px;
-}
-
-.art_director {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0em;
-    margin-bottom: 30px;
-}
-
-.blockquote_the_more {
-    font-family: Bitter;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 31px;
-    letter-spacing: 0em;
-}
-
-.title_bio {
-    writing-mode: vertical-lr;
-    transform: rotate(-180deg);
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0em;
-}
-
-span {
-    display: none;
-}
-
-.slech {
-    display: none;
-}
-
-@media screen and (max-width: 450px) {
-    .conteiner {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #FFFFFF;
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }
-
-    .spisok {
-        display: none;
-    }
-
-    .slech {
-        display: inline;
-    }
-
-    .conteiner-bio {
-        display: flex;
-        flex-direction: column;
-        margin-left: 7%;
-        text-align: left;
-        width: 100%;
-    }
-
-    .conteiner-biography {
-        align-self: flex-end;
-        margin-right: 2%;
-    }
-
-    .photo-Katya-Mills {
-        order: 4;
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .photo-Katya-Mills img {
-        height: 400px;
-        object-fit: cover;
-    }
-
-    span {
-        display: inline;
-    }
-
-    .con {
-        margin-left: 1%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-
-    .conte {
-        display: flex;
-        order: 2;
-        margin-top: 20px;
-    }
-
-    .title_bio {
-        text-align: left;
-        writing-mode: horizontal-tb;
-        transform: rotate(360deg);
-    }
-
-    .blockquote_the_more {
-        font-family: Bitter;
-        font-size: 30px;
-        font-weight: 300;
-        line-height: 36px;
-        letter-spacing: 0em;
-    }
-
-    .katya_mils {
-        font-family: Playfair Display;
-        font-size: 64px;
-        font-weight: 400;
-        line-height: 85px;
-        letter-spacing: 0em;
-    }
-}
-
-/*Блок Дизайнеры*/
-
-.conteiner-designers {
-    display: grid;
-    justify-content: center;
-    padding-left: 1%;
-}
-
-.designer {
-    display: grid;
-    grid-template-columns: 1.5fr repeat(3, 1fr);
-    grid-gap: 20px;
-    overflow: auto;
-}
-
-.header-title_designers {
-    margin-left: 12%;
-    margin-bottom: 30px;
-}
-
-.box-jess-wonder-photo img {
-    width: 572px;
-    height: 538px;
-}
-
-.txt-designers {
-    margin-left: 40%;
-}
-
-.photo-designers img {
-    width: 336px;
-    height: 440px;
-    margin-top: 99px;
-    left: 593.04px;
-}
-
-.designers {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-@media screen and (max-width: 450px) {
-
-    .box-jess-wonder-photo img {
-        width: 310px;
-        height: 438px;
-        margin-top: 5px;
-    }
-
-    .designer {
-        margin-left: 3%;
-    }
-
-    .header-title_designers {
-        margin-left: 4%;
-        margin-bottom: 30px;
-    }
-
-    .photo-designers img {
-        width: 310px;
-        height: 438px;
-        left: 593px;
-        margin-top: 5px;
-    }
-
-    .txt-designers {
-        margin-left: 1%;
-    }
-
-    .designers {
-        font-family: Roboto;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0em;
-    }
-
-    .title_designers {
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21px;
-        letter-spacing: 0em;
-    }
-}
-
-/*Блок Testimonials*/
-.block-testimonials {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-}
-
-.section-testimonials-conteiner {
-    display: grid;
-    grid-template-columns: 10% 45% 20% 30%;
-    justify-content: center;
-}
-
-.title-testimonials {
-    writing-mode: vertical-lr;
-    transform: rotate(-180deg);
-    order: 3;
-    justify-self: start;
-    margin-left: 20px;
-    text-align: right;
-}
-
-.cafe-photo {
-    order: 2;
-    justify-self: stretch;
-}
-
-.block-Website {
-    display: grid;
-    justify-self: center;
-    order: 1;
-}
-
-.block-Website a {
-    text-decoration: none;
-    color: #000;
-}
-
-.websit {
-    grid-row: 1;
-    grid-column: 1;
-    transform: rotate(-90deg);
-    align-self: center;
-}
-
-.brand-image {
-    grid-row: 2;
-    grid-column: 1;
-    transform: rotate(-90deg);
-    align-self: center;
-}
-
-.creativity {
-    grid-row: 3;
-    grid-column: 1;
-    transform: rotate(-90deg);
-    align-self: center;
-}
-
-.blockquote-just-really {
-    order: 4;
-    margin-top: 40px;
-    justify-self: start;
-    text-align: center;
-    font-family: Bitter;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 38px;
-    letter-spacing: 0em;
-}
-
-.cafe-photo img {
-    order: 2;
-    max-width: 569px;
-}
-
-.photo-bag {
-    max-width: 221px;
-    margin-top: 25px;
-    justify-self: center;
-}
-
-.blockquote_i_just {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-
-.website:hover {
-    color: #9370DB;
-}
-
-.website {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.mob-vers {
-    display: none;
-}
-
-@media screen and (max-width: 450px) {
-    .block-testimonials {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 80px;
-    }
-
-    .section-testimonials-conteiner {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-left: 4%;
-        margin-right: 4%;
-    }
-
-    .blockquote-just-really {
-        order: 4;
-        margin-top: 28px;
-        justify-self: stretch;
-        text-align: center;
-        font-family: Bitter;
-        font-size: 30px;
-        font-weight: 300;
-        line-height: 36px;
-        letter-spacing: 0em;
-    }
-
-    .cafe-photo img {
-        display: none;
-    }
-
-    .block-Website {
-        display: grid;
-        justify-self: center;
-        order: 5;
-    }
-
-    .title-testimonials {
-        writing-mode: horizontal-tb;
-        transform: rotate(360deg);
-        text-align: right;
-        order: 1;
-    }
-
-    .websit {
-        grid-column: 1;
-        transform: rotate(360deg);
-        align-self: center;
-    }
-
-    .brand-image {
-        grid-column: 1;
-        transform: rotate(360deg);
-        align-self: center;
-    }
-
-    .creativity {
-        margin-left: 15%;
-        grid-row: 1;
-        grid-column: 2;
-        transform: rotate(360deg);
-        align-self: center;
-    }
-
-    .photo-bag {
-        max-width: 100%;
-        height: 330px;
-        object-fit: cover;
-        margin-top: 25px;
-        justify-self: center;
-    }
-
-    .mob-vers {
-        display: inline;
-    }
-
-    .laptop-vers {
-        display: none;
-    }
-
-    .title_testimonials {
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21px;
-        letter-spacing: 0em;
-    }
-}
-
-/*Блок Strong points*/
-@supports (display: grid) {
-    .section-strong-points {
-        display: grid;
-        justify-content: center;
-        padding-left: 1%;
-        overflow: auto;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-    .block-strong-points {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-rows: 613px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 1%;
-    }
-
-    .header-strong-points {
-        grid-column: 1/4;
-        margin-left: 16%;
-    }
-
-    .block-strengths {
-        margin-left: 30px;
-        margin-right: 30px;
-        align-items: center;
-    }
-
-    .section-strong-points img {
-        width: 335px;
-        height: 554px;
-    }
-
-    .title_strengths {
-        font-family: Playfair Display;
-        font-size: 86px;
-        font-weight: 500;
-        line-height: 86px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-    .sides {
-        font-family: Bitter;
-        font-size: 34px;
-        font-weight: 400;
-        line-height: 41px;
-        letter-spacing: 0em;
-        text-align: left;
-        margin-left: 100px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .section-strong-points {
-        display: grid;
-        justify-content: center;
-        padding-left: 1%;
-        overflow: auto;
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }
-
-    .block-strong-points {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-rows: 455px;
-        grid-template-columns: 250px 310px 310px 310px;
-        grid-gap: 1%;
-        margin-left: 31%;
-        width: 100%;
-    }
-
-    .section-strong-points img {
-        width: 310px;
-        height: 450px;
-    }
-
-    .header-strong-points {
-        grid-column: 1/4;
-        margin-left: 32%;
-        margin-bottom: 30px;
-    }
-
-    .block-strengths {
-        margin-left: 30px;
-        margin-right: 30px;
-        align-items: center;
-        order: 1;
-    }
-
-    .img-SP-3 {
-        order: 3;
-    }
-
-    .img-SP-1 {
-        order: 2;
-    }
-
-    .img-SP-2 {
-        order: 4;
-    }
-
-    .sides {
-        font-family: Bitter;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 28.8px;
-        letter-spacing: 0em;
-        text-align: left;
-        margin-left: 10%;
-    }
-
-    .title_strengths {
-        font-family: Playfair Display;
-        font-size: 46px;
-        font-weight: 400;
-        line-height: 46px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-    .title_strong_point {
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21.09px;
-    }
-}
-
-
-@supports not (display:flex) {
-    .section-strong-points {
-        padding-left: 1%;
-        overflow: auto;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-    .block-strong-points {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .section-strong-points img {
-        width: 335px;
-        height: 554px;
-    }
-
-    .header-strong-points {
-        margin-left: 16%;
-        margin-bottom: 20px;
-    }
-
-    .block-strengths {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-}
-
-/*Подвал сайта */
-.block-footer {
-    display: flex;
-    background-color: #000000;
-    flex-shrink: 0;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 168px;
-}
-
-.block-footer a {
-    color: #ffffff;
-}
-
-.address {
-    font-style: normal;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #FFFFFF;
-}
-
-.address:hover {
-    color: #9370DB;
-}
-
-.product {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.product_mod {
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 28.13px;
-}
-
-.mod_media {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0px;
-    text-align: right;
-    color: #FFFFFF;
-}
-
-@media screen and (max-width: 450px) {
-    .block-footer {
-        display: grid;
-        height: 275px;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 20%);
-        padding: 30px 0 30px 16px;
-    }
-
-    .footer-address {
-        margin-top: 18px;
-    }
-
-    .footer-product {
-        grid-row: 1;
-    }
-
-    .mod_media {
-        margin-top: 8px;
-        font-family: Roboto;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 18.75px;
-        text-align: left;
-    }
-
-    .product {
-        text-align: right;
-        margin-right: 3%;
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 21.09px;
-    }
-
-    .product_mod {
-        font-family: Roboto;
-        font-size: 24px;
-        font-weight: 900;
-        line-height: 28.13px;
-    }
-
-    .address {
-        font-style: normal;
-        font-family: Roboto;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 26px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1020px) {
-    .tablet-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
-
-    .photo-bag {
-        max-width: 121px;
-        margin-top: 25px;
-        justify-self: center;
-    }
-
-    .header-strong-points {
-        grid-column: 1/5;
-        margin-left: 26%;
-    }
-
-    .header {
-        height: 158px;
     }
 }
 
@@ -1062,7 +230,7 @@ span {
     padding: 2%;
 }
 
-.user {
+.modal-form__user {
     background-image: url(svg/user.svg);
     background-size: 6%;
     background-position: right;
@@ -1070,7 +238,7 @@ span {
     background-origin: content-box;
 }
 
-.at {
+.modal-form__at {
     background-image: url(svg/at.svg);
     background-size: 7%;
     background-position: right;
@@ -1078,7 +246,7 @@ span {
     background-origin: content-box;
 }
 
-.text {
+.modal-form__text {
     background-image: url(svg/text.svg);
     background-size: 7%;
     background-position: top right;
@@ -1086,6 +254,10 @@ span {
     background-origin: content-box;
 }
 
+.modal-form__plus {
+    margin-right: 5%;
+    color: #FFFFFF;
+}
 
 .modal-form__input:hover,
 .modal-form__textarea:hover {
@@ -1141,11 +313,11 @@ span {
     text-align: left;
 }
 
-.modal-for_button {
+.modal-form_button {
     text-align: center;
 }
 
-.modal-for_buttonWhite {
+.modal-form_buttonWhite {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 500;
@@ -1157,7 +329,7 @@ span {
     margin-right: 3%;
 }
 
-.modal-for_buttonBlack {
+.modal-form_buttonBlack {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 500;
@@ -1169,35 +341,851 @@ span {
     background-color: #000000;
 }
 
-.open-button:hover {
-    transform: scale(1.2);
-    background: #000000;
-    box-shadow: 2px 2px 4px #9370DB;
-    cursor: pointer;
-}
-
-.modal-for_buttonWhite:hover,
-.modal-for_buttonBlack:hover {
+.modal-form_buttonWhite:hover,
+.modal-form_buttonBlack:hover {
     outline: 2px solid #9370DB;
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.chat {
-    height: 45px;
-    width: 45px;
-    background-color: #000000;
-    border-radius: 5px;
+/*Блок Промо*/
+.section-promo {
+    padding: 100px;
+    background-color: #d9cacb;
+    background-image: url("img/mod.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.chat:before {
-    content: "\f0e6";
-    font-family: FontAwesome;
-    color: #FFFFFF;
+.section-promo__box {
+    display: block;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    max-width: 690px;
+    height: 400px;
+}
+
+.section-promo__title {
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 103px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 14px;
+}
+
+.section-promo__title-modern {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.section-promo__mobile-img {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    .section-promo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        background-color: #FFFFFF;
+        background-image: none;
+        background-position: center;
+        width: 100%;
+    }
+
+    .section-promo__box {
+        display: block;
+        background-color: #FFFFFF;
+        margin: 1%;
+        width: 100%;
+        height: 344px;
+    }
+
+    .section-promo__mobile-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+    }
+
+    .section-promo__title {
+        font-family: Playfair Display;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 93px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding-top: 20%;
+        margin-bottom: 14px;
+    }
+
+    .section-promo__title-modern {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+}
+
+/*Блок Биография*/
+.section-biography {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-top: 151px;
+    margin-bottom: 150px;
+}
+
+.section-biography__title {
+    align-self: flex-start;
+}
+
+.section-biography__title-bio {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    font-family: Roboto;
     font-size: 24px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
 }
 
-.plus {
-    margin-right: 5%;
+.section-biography__photo-katya {
+    order: -1;
+    margin-right: 29px;
+    max-width: 570px;
+}
+
+.section-biography__content {
+    margin-left: 87px;
+    text-align: left;
+}
+
+.section-biography__content-titleKatya {
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 115px;
+    letter-spacing: 0em;
+    margin-bottom: 40px;
+}
+
+.section-biography__list {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    margin-bottom: 30px;
+}
+
+.section-biography__blockquote {
+    font-family: Bitter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+}
+
+.section-biography__list-mobil {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    .section-biography {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .section-biography__list-laptop {
+        display: none;
+    }
+
+    .section-biography__list-mobil {
+        display: inline;
+    }
+
+    .section-biography__title {
+        align-self: flex-end;
+        margin-right: 2%;
+    }
+
+    .section-biography__title-bio {
+        text-align: left;
+        writing-mode: horizontal-tb;
+        transform: rotate(360deg);
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+        text-align: left;
+    }
+
+    .section-biography__photo-katya {
+        order: 4;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .section-biography__photo-katya img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .section-biography__content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 7%;
+        text-align: left;
+        width: 100%;
+    }
+
+    .section-biography__blockquote {
+        margin-left: 1%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-family: Bitter;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 36px;
+        letter-spacing: 0em;
+    }
+
+    .section-biography__content-title {
+        display: flex;
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .section-biography__content-titleKatya {
+        font-family: Playfair Display;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 85px;
+        letter-spacing: 0em;
+    }
+}
+
+/*Блок Дизайнеры*/
+
+.section-designers {
+    display: grid;
+    justify-content: center;
+    padding-left: 1%;
+}
+
+.section-designers__title {
+    margin-left: 12%;
+    margin-bottom: 30px;
+}
+
+.designers__title {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+}
+
+.section-designers__cards {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+    grid-gap: 20px;
+    overflow: auto;
+}
+
+.section-designers__photo-big img {
+    width: 572px;
+    height: 538px;
+}
+
+.section-designers__text-big {
+    margin-left: 40%;
+}
+
+.section-designers__photo-designers img {
+    width: 336px;
+    height: 440px;
+    margin-top: 99px;
+    left: 593.04px;
+}
+
+.section-designers__skils {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@media screen and (max-width: 450px) {
+
+    .section-designers__photo-big img {
+        width: 310px;
+        height: 438px;
+        margin-top: 5px;
+    }
+
+    .section-designers__cards {
+        margin-left: 3%;
+    }
+
+    .section-designers__title {
+        margin-left: 4%;
+        margin-bottom: 30px;
+    }
+
+    .designers__title {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+    }
+
+    .section-designers__photo-designers img {
+        width: 310px;
+        height: 438px;
+        left: 593px;
+        margin-top: 5px;
+    }
+
+    .section-designers__text-big {
+        margin-left: 1%;
+    }
+
+    .section-designers__skils {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+    }
+}
+
+/*Блок Testimonials*/
+.section-testimonials {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.section-testimonials__conteiner {
+    display: grid;
+    grid-template-columns: 10% 45% 15% 30%;
+    justify-content: center;
+}
+
+.section-testimonials__title {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    order: 3;
+    justify-self: start;
+    margin-left: 24px;
+}
+
+.testimonials__title {
+    text-align: right;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+}
+
+.section-testimonials__cafe-photo {
+    order: 2;
+    justify-self: stretch;
+    max-width: 569px;
+}
+
+.section-testimonials__block-website {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    order: 1;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.section-testimonials__block-website a {
+    text-decoration: none;
+    color: #000;
+}
+
+.section-testimonials__block-website a:hover {
+    color: #9370DB;
+}
+
+.block-website__website {
+    grid-row: 1;
+    grid-column: 1;
+    transform: rotate(-90deg);
+    align-self: center;
+}
+
+.block-website__brand-image {
+    grid-row: 2;
+    grid-column: 1;
+    transform: rotate(-90deg);
+    align-self: center;
+}
+
+.block-website__creativity {
+    grid-row: 3;
+    grid-column: 1;
+    transform: rotate(-90deg);
+    align-self: center;
+}
+
+.section-testimonials__blockquote {
+    order: 4;
+    margin-top: 40px;
+    justify-self: start;
+}
+
+.section-testimonials__blockquote-laptop {
+    text-align: center;
+    font-family: Bitter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+}
+
+.section-testimonials__photo-bag {
+    max-width: 221px;
+    margin-top: 25px;
+    justify-self: center;
+}
+
+.section-testimonials__blockquote-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    .section-testimonials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .section-testimonials__conteiner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .blockquote-just-really {
+        order: 4;
+        margin-top: 28px;
+        justify-self: stretch;
+        text-align: center;
+        font-family: Bitter;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 36px;
+        letter-spacing: 0em;
+    }
+
+    .section-testimonials__cafe-photo {
+        display: none;
+    }
+
+    .section-testimonials__block-website {
+        display: grid;
+        justify-self: center;
+        order: 5;
+    }
+
+    .section-testimonials__title {
+        writing-mode: horizontal-tb;
+        transform: rotate(360deg);
+        text-align: right;
+        order: 1;
+    }
+
+    .testimonials__title {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+    }
+
+
+    .block-website__website {
+        grid-column: 1;
+        transform: rotate(360deg);
+        align-self: center;
+    }
+
+    .block-website__brand-image {
+        grid-column: 1;
+        transform: rotate(360deg);
+        align-self: center;
+    }
+
+    .block-website__creativity {
+        margin-left: 15%;
+        grid-row: 1;
+        grid-column: 2;
+        transform: rotate(360deg);
+        align-self: center;
+    }
+
+    .section-testimonials__photo-bag {
+        max-width: 100%;
+        height: 330px;
+        object-fit: cover;
+        margin-top: 25px;
+        justify-self: center;
+    }
+
+    .section-testimonials__blockquote-mobile {
+        display: inline;
+        font-family: Bitter;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .section-testimonials__blockquote-laptop {
+        display: none;
+    }
+}
+
+/*Блок Strong points*/
+@supports (display: grid) {
+    .section-sp {
+        display: grid;
+        justify-content: center;
+        padding-left: 1%;
+        overflow: auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .section-sp__content {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-rows: 613px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1%;
+    }
+
+    .section-sp__title {
+        grid-column: 1/4;
+        margin-left: 16%;
+    }
+
+    .sp__title {
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.13px;
+        text-align: left;
+    }
+
+    .section-sp__block-strengths {
+        margin-left: 30px;
+        margin-right: 30px;
+        align-items: center;
+    }
+
+    .section-sp img {
+        width: 335px;
+        height: 554px;
+    }
+
+    .title_strengths {
+        font-family: Playfair Display;
+        font-size: 86px;
+        font-weight: 500;
+        line-height: 86px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .block-strengths_sides {
+        font-family: Bitter;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 41px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .section-sp {
+        display: grid;
+        justify-content: center;
+        padding-left: 1%;
+        overflow: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .section-sp__content {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-rows: 455px;
+        grid-template-columns: 250px 310px 310px 310px;
+        grid-gap: 1%;
+        margin-left: 31%;
+        width: 100%;
+    }
+
+    .section-sp img {
+        width: 310px;
+        height: 450px;
+    }
+
+    .section-sp__title {
+        grid-column: 1/4;
+        margin-left: 32%;
+        margin-bottom: 30px;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+    }
+
+    .sp__title {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+    }
+
+    .section-sp__block-strengths {
+        margin-left: 30px;
+        margin-right: 30px;
+        align-items: center;
+        order: 1;
+    }
+
+    .section-sp__img-3 {
+        order: 3;
+    }
+
+    .section-sp__img-1 {
+        order: 2;
+    }
+
+    .section-sp__img-2 {
+        order: 4;
+    }
+
+    .block-strengths_sides {
+        font-family: Bitter;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    .title_strengths {
+        font-family: Playfair Display;
+        font-size: 46px;
+        font-weight: 400;
+        line-height: 46px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 419px) {
+    .section-sp__content {
+        margin-left: 35%;
+    }
+
+    .section-sp__title {
+        grid-column: 1/4;
+        margin-left: 35%;
+        margin-bottom: 30px;
+    }
+}
+
+
+@supports not (display:flex) {
+    .section-sp {
+        padding-left: 1%;
+        overflow: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .section-sp__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .section-sp img {
+        width: 335px;
+        height: 554px;
+    }
+
+    .section-sp__title {
+        margin-left: 16%;
+        margin-bottom: 20px;
+    }
+
+    .section-sp__block-strengths {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+/*Подвал сайта */
+.section-footer {
+    display: flex;
+    background-color: #000000;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 168px;
+}
+
+.section-footer a {
+    color: #ffffff;
+}
+
+.section-footer__address {
+    font-style: normal;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
     color: #FFFFFF;
+}
+
+.section-footer__address a:hover {
+    color: #9370DB;
+}
+
+.section-footer__product {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.section-footer__media {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 450px) {
+    .section-footer {
+        display: grid;
+        height: 275px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 20%);
+        padding: 30px 0 30px 16px;
+    }
+
+    .section-footer__address {
+        margin-top: 18px;
+        font-style: normal;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .section-footer__product {
+        grid-row: 1;
+        text-align: right;
+        margin-right: 3%;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.09px;
+    }
+
+    .section-footer__media {
+        margin-top: 8px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.75px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+    .header__tablet-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .section-testimonials__photo-bag {
+        max-width: 121px;
+        margin-top: 25px;
+        margin-left: 40px;
+        justify-self: center;
+    }
+
+    .section-sp__title {
+        grid-column: 1/5;
+        margin-left: 26%;
+    }
+
+    .header {
+        height: 158px;
+    }
 }

@@ -1,0 +1,24 @@
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+    .header__tablet-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .section-testimonials__photo-bag {
+        max-width: 121px;
+        margin-top: 25px;
+        margin-left: 40px;
+        justify-self: center;
+    }
+
+    .section-sp__title {
+        grid-column: 1/5;
+        margin-left: 26%;
+    }
+
+    .header {
+        height: 158px;
+    }
+}

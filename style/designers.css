@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/*Блок Дизайнеры*/
+.section-designers {
+  display: grid;
+  justify-content: center;
+  padding-left: 1%;
+}
+
+.section-designers__title {
+  margin-left: 12%;
+  margin-bottom: 30px;
+}
+
+.designers__title {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+
+.section-designers__cards {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  grid-gap: 20px;
+  overflow: auto;
+}
+
+.section-designers__photo-big img {
+  width: 572px;
+  height: 538px;
+}
+
+.section-designers__text-big {
+  margin-left: 40%;
+}
+
+.section-designers__photo-designers img {
+  width: 336px;
+  height: 440px;
+  margin-top: 99px;
+  left: 593.04px;
+}
+
+.section-designers__skils {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media screen and (max-width: 450px) {
+  .section-designers__photo-big img {
+    width: 310px;
+    height: 438px;
+    margin-top: 5px;
+  }
+  .section-designers__cards {
+    margin-left: 3%;
+  }
+  .section-designers__title {
+    margin-left: 4%;
+    margin-bottom: 30px;
+  }
+  .designers__title {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+  }
+  .section-designers__photo-designers img {
+    width: 310px;
+    height: 438px;
+    left: 593px;
+    margin-top: 5px;
+  }
+  .section-designers__text-big {
+    margin-left: 1%;
+  }
+  .section-designers__skils {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+  }
+}/*# sourceMappingURL=designers.css.map */

@@ -1,0 +1,139 @@
+/*Блок Биография*/
+.section-biography {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-top: 151px;
+    margin-bottom: 150px;
+}
+
+.section-biography__title {
+    align-self: flex-start;
+}
+
+.section-biography__title-bio {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    @include Roboto;
+    line-height: 21px;
+}
+
+.section-biography__photo-katya {
+    order: -1;
+    margin-right: 29px;
+    max-width: 570px;
+}
+
+.section-biography__content {
+    margin-left: 87px;
+    text-align: left;
+}
+
+.section-biography__content-titleKatya {
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 115px;
+    letter-spacing: 0em;
+    margin-bottom: 40px;
+}
+
+.section-biography__list {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    margin-bottom: 30px;
+}
+
+.section-biography__blockquote {
+    font-family: Bitter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+}
+
+.section-biography__list_mobil {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    .section-biography {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .section-biography__list_laptop {
+        display: none;
+    }
+
+    .section-biography__list_mobil {
+        display: inline;
+    }
+
+    .section-biography__title {
+        align-self: flex-end;
+        margin-right: 2%;
+    }
+
+    .section-biography__title-bio {
+        text-align: left;
+        writing-mode: horizontal-tb;
+        transform: rotate(360deg);
+        @include Roboto18;
+        text-align: left;
+    }
+
+    .section-biography__photo-katya {
+        order: 4;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .section-biography__photo-katya img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .section-biography__content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 7%;
+        text-align: left;
+        width: 100%;
+    }
+
+    .section-biography__blockquote {
+        margin-left: 1%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-family: Bitter;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 36px;
+        letter-spacing: 0em;
+    }
+
+    .section-biography__content-title {
+        display: flex;
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .section-biography__content-titleKatya {
+        font-family: Playfair Display;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 85px;
+        letter-spacing: 0em;
+    }
+}
