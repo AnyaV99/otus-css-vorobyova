@@ -3,24 +3,22 @@
     .section-sp {
         display: grid;
         justify-content: center;
-        padding-left: 1%;
-        overflow: auto;
+        padding-left: 2%;
         margin-top: 150px;
         margin-bottom: 150px;
     }
 
     .section-sp__content {
         display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-rows: 613px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 1%;
+        grid-auto-flow: column;
+        gap: 20px;
+        justify-content: left;
+        overflow: auto;
     }
 
     .section-sp__title {
-        grid-column: 1/4;
-        margin-left: 16%;
+        margin-left: 15%;
+        margin-bottom: 2%;
     }
 
     .sp__title {
@@ -70,26 +68,14 @@
         margin-top: 80px;
         margin-bottom: 80px;
     }
-
-    .section-sp__content {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-rows: 455px;
-        grid-template-columns: 250px 310px 310px 310px;
-        grid-gap: 1%;
-        margin-left: 31%;
-        width: 100%;
-    }
-
+    
     .section-sp img {
         width: 310px;
         height: 450px;
     }
 
     .section-sp__title {
-        grid-column: 1/4;
-        margin-left: 32%;
+        margin-left: 20%;
         margin-bottom: 30px;
         @include Roboto18;
     }
@@ -140,19 +126,6 @@
         margin-bottom: 15px;
     }
 }
-
-@media screen and (min-width: 350px) and (max-width: 419px) {
-    .section-sp__content {
-        margin-left: 35%;
-    }
-
-    .section-sp__title {
-        grid-column: 1/4;
-        margin-left: 35%;
-        margin-bottom: 30px;
-    }
-}
-
 
 @supports not (display:flex) {
     .section-sp {

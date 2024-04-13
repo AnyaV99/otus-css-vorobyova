@@ -58,7 +58,15 @@
 }
 
 .section-biography__list_mobil {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section-biography__list-items:nth-of-type(n+2)::before { 
+    content: ' / ';
+    width: 5px;
+    height: 5px;
 }
 
 @media screen and (max-width: 450px) {
@@ -72,12 +80,20 @@
         margin-bottom: 80px;
     }
 
-    .section-biography__list_laptop {
-        display: none;
+    .section-biography__list_mobil {
+        flex-direction: column;
     }
 
-    .section-biography__list_mobil {
-        display: inline;
+    .section-biography__list-items::before { 
+        content: ' - ';
+        width: 5px;
+        height: 5px;
+    }
+    
+    .section-biography__list-items:nth-of-type(n+2)::before { 
+        content: ' - ';
+        width: 5px;
+        height: 5px;
     }
 
     .section-biography__title {
