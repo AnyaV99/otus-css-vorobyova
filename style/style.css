@@ -615,6 +615,10 @@ ul {
   margin-left: 40%;
 }
 
+.section-designers__text_caps {
+  text-transform: uppercase;
+}
+
 .section-designers__photo-designers img {
   width: 336px;
   height: 440px;
