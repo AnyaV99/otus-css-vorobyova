@@ -9,9 +9,6 @@
 .section-designers__title {
     margin-left: 12%;
     margin-bottom: 30px;
-}
-
-.designers__title {
     @include Roboto;
     letter-spacing: 0em;
 }
@@ -23,16 +20,16 @@
     overflow: auto;
 }
 
-.section-designers__photo_big img {
+.section-designers__photo-big img {
     width: 572px;
     height: 538px;
 }
 
-.section-designers__text_big {
+.section-designers__text-big {
     margin-left: 40%;
 }
 
-.section-designers__text_caps {
+.section-designers__text-caps {
     text-transform: uppercase;
 }
 
@@ -54,7 +51,7 @@
 
 @media screen and (max-width: 450px) {
 
-    .section-designers__photo_big img {
+    .section-designers__photo-big img {
         width: 310px;
         height: 438px;
         margin-top: 5px;
@@ -67,9 +64,6 @@
     .section-designers__title {
         margin-left: 4%;
         margin-bottom: 30px;
-    }
-
-    .designers__title {
         @include Roboto18;
     }
 
@@ -80,7 +74,7 @@
         margin-top: 5px;
     }
 
-    .section-designers__text_big {
+    .section-designers__text-big {
         margin-left: 1%;
     }
 

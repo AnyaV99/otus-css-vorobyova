@@ -17,4 +17,7 @@
   .header {
     height: 158px;
   }
+  .section-sp__block-strengths {
+    order: -1;
+  }
 }/*# sourceMappingURL=tablet.css.map */

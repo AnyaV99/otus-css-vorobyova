@@ -182,7 +182,22 @@ ul {
   top: 2%;
 }
 
-.modal-form:after {
+.modal::backdrop {
+  background-color: rgba(88, 85, 85, 0.5);
+}
+
+.modal__form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  width: 480px;
+  height: 588px;
+  background-color: #FFFFFF;
+}
+
+.modal__form:after {
   content: "";
   position: fixed;
   width: 480px;
@@ -194,22 +209,7 @@ ul {
   z-index: -1;
 }
 
-.modal::backdrop {
-  background-color: rgba(88, 85, 85, 0.5);
-}
-
-.modal-form {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 24px;
-  width: 480px;
-  height: 588px;
-  background-color: #FFFFFF;
-}
-
-.modal-form__input {
+.modal__form-input {
   width: 100%;
   height: 42px;
   border: 1px solid #000000;
@@ -222,7 +222,7 @@ ul {
   padding: 2%;
 }
 
-.modal-form__user {
+.modal__form-user {
   background-image: url(../img/user.svg);
   background-size: 6%;
   background-position: right;
@@ -230,7 +230,7 @@ ul {
   background-origin: content-box;
 }
 
-.modal-form__at {
+.modal__form-at {
   background-image: url(../img/at.svg);
   background-size: 7%;
   background-position: right;
@@ -238,7 +238,7 @@ ul {
   background-origin: content-box;
 }
 
-.modal-form__text {
+.modal__form-text {
   background-image: url(../img/text.svg);
   background-size: 7%;
   background-position: top right;
@@ -246,22 +246,22 @@ ul {
   background-origin: content-box;
 }
 
-.modal-form__plus {
+.modal__button-plus {
   margin-right: 5%;
   color: #FFFFFF;
 }
 
-.modal-form__input:hover,
-.modal-form__textarea:hover {
+.modal__form-input:hover,
+.modal__form-textarea:hover {
   background-color: #F5F5F5;
 }
 
-.modal-form__input:focus,
-.modal-form__textarea:focus {
+.modal__form-input:focus,
+.modal__form-textarea:focus {
   outline: 2px solid #9370DB;
 }
 
-.modal-form__label {
+.modal__form-label {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -275,7 +275,7 @@ ul {
   text-align: left;
 }
 
-.modal-form__textarea {
+.modal__form-textarea {
   width: 100%;
   resize: none;
   border: 1px solid #000000;
@@ -289,7 +289,7 @@ ul {
   padding: 2%;
 }
 
-.modal-form__title {
+.modal__form-title {
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
@@ -297,7 +297,7 @@ ul {
   text-align: left;
 }
 
-.modal-form__subtitle {
+.modal__form-subtitle {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
@@ -305,11 +305,11 @@ ul {
   text-align: left;
 }
 
-.modal-form_button {
+.modal__button {
   text-align: center;
 }
 
-.modal-form_button_white {
+.modal__button-white {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
@@ -321,7 +321,7 @@ ul {
   margin-right: 3%;
 }
 
-.modal-form__button_black {
+.modal__button-black {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
@@ -333,8 +333,8 @@ ul {
   background-color: #000000;
 }
 
-.modal-form_button_white:hover,
-.modal-form__button_black:hover {
+.modal__button-white:hover,
+.modal__button-black:hover {
   outline: 2px solid #9370DB;
   cursor: pointer;
   transform: scale(1.1);
@@ -369,7 +369,7 @@ ul {
   margin-bottom: 14px;
 }
 
-.section-promo__title_modern {
+.section-promo__title-modern {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
@@ -473,7 +473,7 @@ ul {
   margin-bottom: 40px;
 }
 
-.section-biography__list {
+.section-biography__content-list {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
@@ -490,7 +490,7 @@ ul {
   letter-spacing: 0em;
 }
 
-.section-biography__list_mobil {
+.section-biography__list-mobil {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -512,7 +512,7 @@ ul {
     margin-top: 80px;
     margin-bottom: 80px;
   }
-  .section-biography__list_mobil {
+  .section-biography__list-mobil {
     flex-direction: column;
   }
   .section-biography__list-items::before {
@@ -589,9 +589,6 @@ ul {
 .section-designers__title {
   margin-left: 12%;
   margin-bottom: 30px;
-}
-
-.designers__title {
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
@@ -606,16 +603,16 @@ ul {
   overflow: auto;
 }
 
-.section-designers__photo_big img {
+.section-designers__photo-big img {
   width: 572px;
   height: 538px;
 }
 
-.section-designers__text_big {
+.section-designers__text-big {
   margin-left: 40%;
 }
 
-.section-designers__text_caps {
+.section-designers__text-caps {
   text-transform: uppercase;
 }
 
@@ -636,7 +633,7 @@ ul {
 }
 
 @media screen and (max-width: 450px) {
-  .section-designers__photo_big img {
+  .section-designers__photo-big img {
     width: 310px;
     height: 438px;
     margin-top: 5px;
@@ -647,8 +644,6 @@ ul {
   .section-designers__title {
     margin-left: 4%;
     margin-bottom: 30px;
-  }
-  .designers__title {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 700;
@@ -660,7 +655,7 @@ ul {
     left: 593px;
     margin-top: 5px;
   }
-  .section-designers__text_big {
+  .section-designers__text-big {
     margin-left: 1%;
   }
   .section-designers__skils {
@@ -685,7 +680,7 @@ ul {
   justify-content: center;
 }
 
-.section-testimonials__title {
+.section-testimonials__header {
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
   order: 3;
@@ -693,7 +688,7 @@ ul {
   margin-left: 24px;
 }
 
-.testimonials__title {
+.section-testimonials__header-title {
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
@@ -751,13 +746,13 @@ ul {
   align-self: center;
 }
 
-.section-testimonials__blockquote {
+.section-testimonials__conteiner-blockquote {
   order: 4;
   margin-top: 40px;
   justify-self: start;
 }
 
-.section-testimonials__blockquote_laptop {
+.section-testimonials__blockquote-laptop {
   text-align: center;
   font-family: Bitter;
   font-size: 32px;
@@ -772,7 +767,7 @@ ul {
   justify-self: center;
 }
 
-.section-testimonials__blockquote_mobile {
+.section-testimonials__blockquote-mobile {
   display: none;
 }
 
@@ -809,13 +804,13 @@ ul {
     justify-self: center;
     order: 5;
   }
-  .section-testimonials__title {
+  .section-testimonials__header {
     writing-mode: horizontal-tb;
     transform: rotate(360deg);
     text-align: right;
     order: 1;
   }
-  .testimonials__title {
+  .section-testimonials__header-title {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 700;
@@ -846,7 +841,7 @@ ul {
     margin-top: 25px;
     justify-self: center;
   }
-  .section-testimonials__blockquote_mobile {
+  .section-testimonials__blockquote-mobile {
     display: inline;
     font-family: Bitter;
     font-size: 30px;
@@ -854,7 +849,7 @@ ul {
     line-height: 36px;
     text-align: center;
   }
-  .section-testimonials__blockquote_laptop {
+  .section-testimonials__blockquote-laptop {
     display: none;
   }
 }
@@ -874,11 +869,11 @@ ul {
     justify-content: left;
     overflow: auto;
   }
-  .section-sp__title {
+  .section-sp__header {
     margin-left: 15%;
     margin-bottom: 2%;
   }
-  .sp__title {
+  .section-sp__header-title {
     font-family: Roboto;
     font-size: 24px;
     font-weight: 700;
@@ -895,7 +890,7 @@ ul {
     width: 335px;
     height: 554px;
   }
-  .title_strengths {
+  .section-sp__title-strengths {
     font-family: Playfair Display;
     font-size: 86px;
     font-weight: 500;
@@ -904,7 +899,7 @@ ul {
     text-align: center;
     margin-bottom: 15px;
   }
-  .block-strengths_sides {
+  .section-sp__title-sides {
     font-family: Bitter;
     font-size: 34px;
     font-weight: 400;
@@ -927,7 +922,7 @@ ul {
     width: 310px;
     height: 450px;
   }
-  .section-sp__title {
+  .section-sp__header {
     margin-left: 20%;
     margin-bottom: 30px;
     font-family: Roboto;
@@ -935,7 +930,7 @@ ul {
     font-weight: 700;
     line-height: 21.09px;
   }
-  .sp__title {
+  .section-sp__header-title {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 700;
@@ -947,16 +942,16 @@ ul {
     align-items: center;
     order: 1;
   }
-  .section-sp__img-3 {
+  .section-sp__img-cafe {
     order: 3;
   }
-  .section-sp__img-1 {
+  .section-sp__img-armchair {
     order: 2;
   }
-  .section-sp__img-2 {
+  .section-sp__img-table {
     order: 4;
   }
-  .block-strengths_sides {
+  .section-sp__title-sides {
     font-family: Bitter;
     font-size: 24px;
     font-weight: 400;
@@ -965,7 +960,7 @@ ul {
     text-align: left;
     margin-left: 10%;
   }
-  .title_strengths {
+  .section-sp__title-strengths {
     font-family: Playfair Display;
     font-size: 46px;
     font-weight: 400;
@@ -1105,5 +1100,8 @@ ul {
   }
   .header {
     height: 158px;
+  }
+  .section-sp__block-strengths {
+    order: -1;
   }
 }/*# sourceMappingURL=style.css.map */

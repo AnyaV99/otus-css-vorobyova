@@ -40,7 +40,7 @@
     margin-bottom: 40px;
 }
 
-.section-biography__list {
+.section-biography__content-list {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 500;
@@ -57,7 +57,7 @@
     letter-spacing: 0em;
 }
 
-.section-biography__list_mobil {
+.section-biography__list-mobil {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -80,7 +80,7 @@
         margin-bottom: 80px;
     }
 
-    .section-biography__list_mobil {
+    .section-biography__list-mobil {
         flex-direction: column;
     }
 

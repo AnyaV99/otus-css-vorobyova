@@ -12,7 +12,7 @@
     justify-content: center;
 }
 
-.section-testimonials__title {
+.section-testimonials__header {
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     order: 3;
@@ -20,7 +20,7 @@
     margin-left: 24px;
 }
 
-.testimonials__title {
+.section-testimonials__header-title {
     @include Roboto;
     text-align: right;
     line-height: 28.13px;
@@ -75,13 +75,13 @@
     align-self: center;
 }
 
-.section-testimonials__blockquote {
+.section-testimonials__conteiner-blockquote {
     order: 4;
     margin-top: 40px;
     justify-self: start;
 }
 
-.section-testimonials__blockquote_laptop {
+.section-testimonials__blockquote-laptop {
     text-align: center;
     font-family: Bitter;
     font-size: 32px;
@@ -96,7 +96,7 @@
     justify-self: center;
 }
 
-.section-testimonials__blockquote_mobile {
+.section-testimonials__blockquote-mobile {
     display: none;
 }
 
@@ -138,14 +138,14 @@
         order: 5;
     }
 
-    .section-testimonials__title {
+    .section-testimonials__header {
         writing-mode: horizontal-tb;
         transform: rotate(360deg);
         text-align: right;
         order: 1;
     }
 
-    .testimonials__title {
+    .section-testimonials__header-title {
         @include Roboto18;
     }
 
@@ -177,7 +177,7 @@
         justify-self: center;
     }
 
-    .section-testimonials__blockquote_mobile {
+    .section-testimonials__blockquote-mobile {
         display: inline;
         font-family: Bitter;
         font-size: 30px;
@@ -186,7 +186,7 @@
         text-align: center;
     }
 
-    .section-testimonials__blockquote_laptop {
+    .section-testimonials__blockquote-laptop {
         display: none;
     }
 }

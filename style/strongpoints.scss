@@ -16,12 +16,12 @@
         overflow: auto;
     }
 
-    .section-sp__title {
+    .section-sp__header {
         margin-left: 15%;
         margin-bottom: 2%;
     }
 
-    .sp__title {
+    .section-sp__header-title {
         @include Roboto;
         line-height: 28.13px;
         text-align: left;
@@ -38,7 +38,7 @@
         height: 554px;
     }
 
-    .title_strengths {
+    .section-sp__title-strengths {
         font-family: Playfair Display;
         font-size: 86px;
         font-weight: 500;
@@ -48,7 +48,7 @@
         margin-bottom: 15px;
     }
 
-    .block-strengths_sides {
+    .section-sp__title-sides {
         font-family: Bitter;
         font-size: 34px;
         font-weight: 400;
@@ -74,13 +74,13 @@
         height: 450px;
     }
 
-    .section-sp__title {
+    .section-sp__header {
         margin-left: 20%;
         margin-bottom: 30px;
         @include Roboto18;
     }
 
-    .sp__title {
+    .section-sp__header-title {
         font-family: Roboto;
         font-size: 18px;
         font-weight: 700;
@@ -94,19 +94,19 @@
         order: 1;
     }
 
-    .section-sp__img-3 {
+    .section-sp__img-cafe {
         order: 3;
     }
 
-    .section-sp__img-1 {
+    .section-sp__img-armchair {
         order: 2;
     }
 
-    .section-sp__img-2 {
+    .section-sp__img-table {
         order: 4;
     }
 
-    .block-strengths_sides {
+    .section-sp__title-sides {
         font-family: Bitter;
         font-size: 24px;
         font-weight: 400;
@@ -116,7 +116,7 @@
         margin-left: 10%;
     }
 
-    .title_strengths {
+    .section-sp__title-strengths {
         font-family: Playfair Display;
         font-size: 46px;
         font-weight: 400;
